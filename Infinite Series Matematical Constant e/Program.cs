@@ -14,7 +14,10 @@
         // calculating the estimated value of mathematical constant e
         for (int i = 1; i <= number; i++) 
         {
+            // calculating factorial
             factorial = factorial * i;
+
+            // calculating the value of e
             e = e + 1 / factorial;
         }
 
