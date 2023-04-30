@@ -11,14 +11,18 @@
         Console.Write("Enter The Number Of Terms To Be Used In The Series:  ");
         number = Convert.ToInt32(Console.ReadLine());
 
-        // calculating the value of mathematical constant e
+        // calculating the estimated value of mathematical constant e
         for (int i = 1; i <= number; i++) 
         {
             factorial = factorial * i;
             e = e + 1 / factorial;
         }
 
-        
+        // displaying qestimated value of e
+        Console.WriteLine("Estimated Value Of e:  " + e);
+
+        // displaying actual value of e
+        Console.WriteLine("Actual Value Of e:  " + Math.E);
     }
     // end of main method
 }
